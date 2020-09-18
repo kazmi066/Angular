@@ -1,0 +1,37 @@
+<br>
+
+<section class="introduction">
+    <div class="columns">
+        <div class="first">
+            <h1>Have your job postings found<br> by millions of job seekers<br> who search on Google every day.</h1>
+            <p class="lead">Google brings together job postings from across the web,
+                            whether they're on websites run by small businesses or job
+                            sites with thousands of listings. This helps job seekers easily
+                            find their next job directly in Search. Make sure your job postings 
+                            appear on Google today.</p>
+            <br><br>
+            <h3 class="welcome">WELCOME</h3>
+        </div>
+        <div class="second">
+            <img src="https://images.pexels.com/photos/399161/pexels-photo-399161.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="None">
+        </div>
+    </div>
+</section>
+
+<div *ngFor="let jobs of jobTitles" class="myContainer">
+    <div class='my-css-class'>
+        <div class="mycard">
+            <img class="card-img-top" src="{{jobs.company_logo}}" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">{{jobs.title}}</h4>
+                <p class="card-text">{{jobs.description.slice(0,100)}}</p>
+            </div>
+            <div class="card-footer">
+                <button (click)="showId(jobs.id)" class="details btn btn-info">Details</button>
+                <h5 class="text-muted company_footer">{{jobs.company}}</h5>
+            </div>
+        </div>
+    </div>
+
+    
+</div>

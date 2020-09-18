@@ -1,0 +1,26 @@
+#topNavbar .navbar-brand{
+    font-size: 20px;   
+}
+
+#topNavbar .navbar-brand .brand-1{
+    color: rgb(185, 13, 13);
+}
+
+#topNavbar .navbar-brand .brand-2{
+    color: rgb(21, 187, 35);
+}
+
+#collapsibleNavId{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#collapsibleNavId li{
+    padding-right: 30px;
+}
+
+@media(max-width: 1000px){
+    .container{
+        min-width: 100%;
+    }
+}

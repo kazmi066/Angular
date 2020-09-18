@@ -1,0 +1,18 @@
+<br>
+<div *ngFor="let jobs of jobTitles" class="myContainer">
+    <div class='my-css-class'>
+        <div class="mycard">
+            <img class="card-img-top" src="{{jobs.company_logo}}" alt="Card image cap" height="200px">
+            <div class="card-body">
+                <h5 class="card-title">{{jobs.title}}</h5>
+                <p class="card-text">{{jobs.description.slice(0,100)}}</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-info" (click)="showId(jobs.id)">Details</button>
+                <h5 class="text-muted">{{jobs.company}}</h5>
+            </div>
+        </div>
+    </div>
+
+
+</div>

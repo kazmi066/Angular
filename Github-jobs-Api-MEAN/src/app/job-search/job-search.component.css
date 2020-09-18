@@ -1,0 +1,37 @@
+.mycard{
+    display: flex;
+    flex-direction: column;
+    width: 26rem;
+    height: 31rem;
+    background-color: rgb(9, 54, 66);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.card-body{
+    padding-top: 30px;
+}
+
+.mycard img{
+    height: 10rem;
+    width: 18rem;
+    margin: 0 auto;
+}
+
+.card-footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-footer h5{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.my-css-class {
+    float: left;
+    margin: 1em;
+}
